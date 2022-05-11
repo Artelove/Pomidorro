@@ -1,0 +1,45 @@
+.back{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+.relax{
+    background-color: cornflowerblue;
+}
+.content{
+    width: 80%;
+    padding: 2% 10%;
+}
+.time{
+    color: white;
+    font-size: 144px;
+}
+.pause{
+    position: relative;
+    left: 100px;
+    background-color: burlywood;
+    color: white;
+    font-size: 115px;
+    font-weight: 900;
+    padding: 30px;
+
+}
+.settings {
+    font-size: 30px;
+    font-weight: 500;
+    background-color: whitesmoke;
+}
+.settings div {
+    margin: 20px;
+    width: fit-content;
+}
+.changeTime div{
+    width: 70px;
+    padding: 20px;
+}
+.plusTime{
+    background-color: #0dcaf0;
+}
+.minusTime{
+    background-color: #20c997;
+}

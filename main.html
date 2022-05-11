@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pomidorro</title>
+    <meta name="description" content="Pomidorro my Intepritation">
+    <meta name="author" content="Artelove">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/boostrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link id="icon" rel="icon" href="img/work.ico" type="image/x-icon" />
+
+</head>
+
+<body>
+
+<div id="back" class="back">
+    <div class="content container">
+        <div class="d-flex flex-row m-3">
+        <div id="pomidorroDoneCount" style="color: skyblue; font-size: 30px; margin-left: 300px; margin-bottom: 50px; font-weight: 500">Количество помидорок: 0/12</div>
+            <div class="pause" onclick="changeAction()" style="font-size: 30px; margin: 10px; padding: 10px" >skip</div>
+        </div>
+        <div class="clock d-flex flex-row justify-content-center">
+            <div id="time" class="time d-flex flex-row">
+                <div id="minutes">25</div>
+                <div>:</div>
+                <div id="seconds">00</div>
+            </div>
+            <div>
+                <div id="pause" class="pause"> go? </div>
+            </div>
+        </div>
+        <div class="settings col-md-8 mx-auto  justify-content-center">
+            <div>Время помидорки</div>
+            <div class="d-flex flex-row changeTime  justify-content-center">
+                <div id="timePomidorro" style="width: 50px;"></div>
+                <div id="plusPomidorro" class="plusTime">+</div>
+                <div id="minusPomidorro" class="minusTime">-</div>
+            </div>
+            <div class=" justify-content-center">Время отдыха</div>
+            <div class="d-flex flex-row changeTime  justify-content-center ">
+                <div id="timeRelax" style="width: 50px;" class="timeCount"></div>
+                <div id="plusRelax" class="plusTime">+</div>
+                <div id="minusRelax" class="minusTime">-</div>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<script src="js/boostrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
