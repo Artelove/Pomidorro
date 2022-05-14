@@ -30,6 +30,8 @@ let bTime, bPlusTimePomidorro, bMinusTimePomidorro, bTimePomidorro,
     bMinutes = document.getElementById("minutes");
     bSeconds = document.getElementById("seconds");
     convertTime();
+
+
     bTimeRelax.innerHTML = timeRelax;
     bTimePomidorro.innerHTML = timePomidorro;
     bPause.onclick = function () {
@@ -86,6 +88,12 @@ let bTime, bPlusTimePomidorro, bMinusTimePomidorro, bTimePomidorro,
     }
     function changeAction(){
         if (whatNow === "Work") {
+            /*sendNotification("Время отдохнуть :)",
+            {
+                body: 'Иди попей воды и подыши',
+                icon: 'img/relax.png',
+                dir: 'auto'
+            });*/
             back.classList.add("relax");
             whatNow = "Relax";
             bigRelaxCounter++;
@@ -95,6 +103,12 @@ let bTime, bPlusTimePomidorro, bMinusTimePomidorro, bTimePomidorro,
                 audio.src = bigRelaxPath;
             }
             else {
+                /*sendNotification("Время чилить! :)",
+                    {
+                        body: 'Разомнись и поделай другие дела',
+                        icon: 'img/relax.png',
+                        dir: 'auto'
+                    });*/
                 timeInt = timeRelax * 60;
                 audio.src = relaxPath;
             }
@@ -103,6 +117,12 @@ let bTime, bPlusTimePomidorro, bMinusTimePomidorro, bTimePomidorro,
             bFavicon.href = relaxIcon;
         }
         else {
+            /*sendNotification("Пора заниматься :)",
+                {
+                    body: 'Не забудь отметить выполненные пункты',
+                    icon: 'img/work.png',
+                    dir: 'auto'
+                });*/
             whatNow = "Work";
             back.classList.remove("relax");
             timeInt = timePomidorro*60;
@@ -111,4 +131,14 @@ let bTime, bPlusTimePomidorro, bMinusTimePomidorro, bTimePomidorro,
         }
         audio.play();
     }
+
+    function startWithMeditation(){
+        back.classList.add("relax");
+        whatNow = "Relax";
+        timeInt = timeRelax * 60;
+        audio.src = relaxPath;
+        timeNeedGo = true;
+        document.getElementById("meditation").style = "display:none";
+    }
+
 
