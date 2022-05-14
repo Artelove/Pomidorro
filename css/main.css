@@ -50,3 +50,11 @@
 .minusTime{
     background-color: #20c997;
 }
+.volumeText{
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 50px;
+    color: white;
+    background-color: #d63384;
+    padding: 0 20px;
+}

@@ -16,8 +16,19 @@
 
 <div id="back" class="back">
     <div class="content container">
+        <div>
+            <div class="d-flex flex-row">
+                <p>Громкость аудио: </p>
+                <div id="volumeCount">100</div>
+            </div>
+            <div class="d-flex flex-row">
+                <div class="volumeText" onclick="changeVolume(0.05)">+</div>
+                <div class="volumeText"  onclick="changeVolume(-0.05)">-</div>
+            </div>
+        </div>
         <div class="d-flex flex-row m-3">
         <div id="pomidorroDoneCount" style="color: skyblue; font-size: 30px; margin-left: 300px; margin-bottom: 50px; font-weight: 500">Количество помидорок: 0/12</div>
+
             <div class="pause" onclick="changeAction()" style="font-size: 30px; margin: 10px; padding: 10px" >skip</div>
         </div>
         <div class="clock d-flex flex-row justify-content-center">

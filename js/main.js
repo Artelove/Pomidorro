@@ -141,4 +141,11 @@ let bTime, bPlusTimePomidorro, bMinusTimePomidorro, bTimePomidorro,
         document.getElementById("meditation").style = "display:none";
     }
 
+    function changeVolume(volume){
+        audio.volume+=volume;
+        document.getElementById("volumeCount").innerHTML = Math.round(audio.volume*100);
+    }
+
+
+
 
